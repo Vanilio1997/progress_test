@@ -1,0 +1,15 @@
+.trade_container{
+    display: flex;
+    font-size: 60px;
+    justify-content: space-around;
+}
+
+.green_color{
+    color: #09be09;
+    cursor: pointer;
+}
+
+.red_color{
+    color: #f00707;
+    cursor: pointer;
+}

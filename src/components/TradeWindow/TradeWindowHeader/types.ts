@@ -1,0 +1,4 @@
+export interface ITabsInfoInterface{
+    value: string;
+    link: string;
+}

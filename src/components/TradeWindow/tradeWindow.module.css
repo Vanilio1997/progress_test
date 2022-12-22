@@ -1,0 +1,20 @@
+.wrapper{
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+    border: 1px solid #bdc3c7;
+    position: relative;
+    z-index: 1;
+}
+
+.modalWindow{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #bdc3c7;
+    border-radius: 10px;
+    z-index: 2;
+    background-color: white;
+}

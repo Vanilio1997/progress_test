@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    justify-content: flex-start;
+    height: 50px;
+    border-bottom: 1px solid #bdc3c7;
+}
+
+.activeTab{
+    padding: 5px 10px;
+    text-align: center;
+    vertical-align: middle;
+    border-left: 1px solid #bdc3c7 ;
+    border-right: 1px solid #bdc3c7 ;
+    border-bottom: none;
+}
+
+.tab{
+   padding: 5px 10px;
+   text-align: center;
+   vertical-align: middle;
+}
+
+
