@@ -4,6 +4,7 @@ export  interface Ideal{
     dealInstrument: string,
     dealVolume: number,
     dealTime: Date,
+    volume: number,
 }
 
 export interface IState{

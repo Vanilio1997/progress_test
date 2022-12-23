@@ -1,6 +1,6 @@
 .wrapper{
     width: 600px;
-    height: 600px;
+    min-height: 600px;
     border-radius: 10px;
     border: 1px solid #bdc3c7;
     position: relative;
@@ -8,13 +8,15 @@
 }
 
 .modalWindow{
-    width: 400px;
-    height: 400px;
-    position: absolute;
+    width: 300px;
+    height: 200px;
     top: 0;
     left: 0;
     border: 1px solid #bdc3c7;
     border-radius: 10px;
     z-index: 2;
     background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

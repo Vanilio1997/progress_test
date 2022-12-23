@@ -14,18 +14,18 @@ const TradeWindow = () => {
 
   return (
     <>
-      <div className={styles.wrapper}>
-        <TradeWindowHeader />
-        <AppRouter />
+
         {
           isModalOpen ?
             <div className={styles.modalWindow}>
-            <ModalWIndow />
+              <ModalWIndow />
             </div>
           : 
-          null
+          <div className={styles.wrapper}>
+            <TradeWindowHeader />
+            <AppRouter />
+          </div>
         }
-      </div>
     </>
   )
 }

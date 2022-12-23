@@ -1,0 +1,23 @@
+.table{
+    border-collapse: collapse;
+    border-spacing: 5px;
+    color: #bdc3c7;
+    width: 100%;
+    text-align: center;
+}
+
+.tableHeader{
+    border-bottom: 3px solid #bdc3c7;
+}
+
+.table_container{
+    padding: 30px 0;
+}
+
+.green_color{
+    color: #09be09;
+}
+
+.red_color{
+    color: #f00707;
+}

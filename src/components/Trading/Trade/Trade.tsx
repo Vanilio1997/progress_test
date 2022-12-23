@@ -1,5 +1,6 @@
 import React,{useState, useEffect} from 'react'
 import { useDispatch } from 'react-redux'
+import { useTypedSelector } from '../../../hooks/useTypedSelector'
 import styles from './Trade.module.css'
 
 export const Trade = () => {
@@ -7,6 +8,7 @@ export const Trade = () => {
   const [buyValue , setBuyValue ] = useState((Math.random() * 1000))
   const [sellValue , setSellValue] = useState (buyValue - (buyValue * 0.005))
 
+  const instrumentValue = useTypedSelector(state => state.tradeInfo.currentInstrument)
 
   const dispatch = useDispatch()
   
@@ -24,6 +26,12 @@ export const Trade = () => {
     return () => clearInterval(interval)
 
   }, [buyValue])
+
+  useEffect(()=>{
+    const randomPrice = (Math.random() * 1000)
+    setBuyValue(randomPrice)
+    setSellValue(randomPrice - (randomPrice * 0.005))
+  } , [instrumentValue])
 
   function chooseOperation(price: number , operationType: string){
     dispatch({type:"PICK_OPERATION_INFO" , payload: { price: price , operationType: operationType }})
