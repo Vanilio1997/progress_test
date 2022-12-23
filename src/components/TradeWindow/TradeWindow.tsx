@@ -10,22 +10,21 @@ import { AppRouter } from '../../AppRouter'
 
 const TradeWindow = () => {
   const isModalOpen = useTypedSelector(state => state.tradeInfo.isTradeModal)
-  console.log(isModalOpen);
 
   return (
     <>
 
-        {
-          isModalOpen ?
-            <div className={styles.modalWindow}>
-              <ModalWIndow />
-            </div>
-          : 
-          <div className={styles.wrapper}>
-            <TradeWindowHeader />
-            <AppRouter />
+      {
+        isModalOpen ?
+          <div className={styles.modalWindow}>
+            <ModalWIndow />
           </div>
-        }
+        : 
+        <div className={styles.wrapper}>
+          <TradeWindowHeader />
+          <AppRouter />
+        </div>
+      }
     </>
   )
 }
