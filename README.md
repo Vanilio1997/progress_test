@@ -1,3 +1,12 @@
+# Как запустить
+##Клонируете репозиторий
+git clone https://github.com/Vanilio1997/progress_test.git
+##Устанавливаете зависимости
+npm i
+##Запускаете проект
+npm start
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
